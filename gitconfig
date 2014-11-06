@@ -1,0 +1,24 @@
+[user]
+	name = Alex Reid
+	email = alexthereid@gmail.com
+[core]
+	editor = vim
+	excludesfile = /home/alex/.gitignore
+	autocrlf = input
+	pager = less -F -X
+[merge]
+	tool = vimdiff
+[color]
+	ui = true
+	branch = true
+	diff = true
+	grep = true
+[branch]
+    autosetuprebase = remote
+[diff]
+    mnemonicprefix = true
+    renames = copies
+[push]
+    default = upstream
+[log]
+    decorate = short
