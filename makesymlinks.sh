@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="Xresources bashrc gitconfig i3 i3status.conf inputrc irssi vimrc"    # list of files/folders to symlink in homedir
+files="Xresources bashrc fonts.conf gitconfig i3 i3status.conf inputrc irssi vimrc"    # list of files/folders to symlink in homedir
 
 ##########
 

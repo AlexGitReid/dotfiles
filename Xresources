@@ -15,6 +15,7 @@ URxvt*font: xft:DejaVu Sans Mono:size=10 */
 ! Scrollbar
 URxvt.scrollStyle: rxvt
 URxvt.scrollBar: false
+URxvt.secondaryWheel: true
  
 ! Cursor
 URxvt.cursorBlink: true
