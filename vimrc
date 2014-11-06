@@ -14,6 +14,4 @@ set mouse=a
 
 set laststatus=2
 
-colorscheme slate
-
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
