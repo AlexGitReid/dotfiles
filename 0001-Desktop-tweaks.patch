@@ -1,0 +1,71 @@
+From eb7ee2c151024d7b86040beddba73954926dd27b Mon Sep 17 00:00:00 2001
+From: Alex Reid <alexthereid@gmail.com>
+Date: Thu, 6 Nov 2014 08:37:58 -0500
+Subject: [PATCH] Desktop tweaks.
+
+---
+ i3/config     |  4 ----
+ i3status.conf | 11 +++--------
+ 2 files changed, 3 insertions(+), 12 deletions(-)
+
+diff --git a/i3/config b/i3/config
+index ee3fa43..8a6d0a5 100644
+--- a/i3/config
++++ b/i3/config
+@@ -151,10 +151,6 @@ bindsym $mod+Control+l exec "sync && xautolock -locknow"
+ # brightness control
+ # bindsym XF86MonBrightnessDown exec xbacklight -steps 1 -time 0 -dec 5
+ # bindsym XF86MonBrightnessUp exec xbacklight -steps 1 -time 0 -inc 5
+-# volume control
+-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -M set Master 5%+
+-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -M set Master 5%-
+-bindsym XF86AudioMute exec --no-startup-id amixer -M set Master toggle
+ 
+ # Start i3bar to display a workspace bar (plus the system information i3status
+ # finds out, if available)
+diff --git a/i3status.conf b/i3status.conf
+index ab1ab64..9558ed9 100644
+--- a/i3status.conf
++++ b/i3status.conf
+@@ -15,12 +15,11 @@ general {
+ order += "volume master"
+ #order += "ipv6"
+ order += "disk /"
+-order += "disk /home/alex"
+ #order += "run_watch DHCP"
+ #order += "run_watch VPN"
+ order += "wireless wlan0"
+ order += "ethernet eth0"
+-order += "battery 0"
++#order += "battery 0"
+ order += "cpu_temperature 0"
+ order += "load"
+ order += "tztime local"
+@@ -57,22 +56,18 @@ tztime local {
+ 
+ cpu_temperature 0 {
+         format = "T: %degrees °C"
+-        max_threshold = "72"
++        max_threshold = "42"
+ }
+ 
+ load {
+         format = "%1min %5min %15min"
+-        max_threshold = "4"
++        max_threshold = "8"
+ }
+ 
+ disk "/" {
+         format = "/: %avail"
+ }
+ 
+-disk "/home/alex" {
+-        format = "~: %avail"
+-}
+-
+ volume master {
+    format = "♪: %volume"
+    format_muted = "♪: muted (%volume)"
+-- 
+2.1.3
+
