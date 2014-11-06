@@ -14,7 +14,7 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-[ -f /etc/profile.d/bash_completions ] && source /etc/profile.d/bash_completion.sh
+[ -f /etc/profile.d/bash_completion.sh ] && source /etc/profile.d/bash_completion.sh
 
 # Put your fun stuff here.
 fortune -s chapterhouse-dune children-of-dune dune dune-messiah god-emperor heretics-of-dune house-atreides house-harkonnen
