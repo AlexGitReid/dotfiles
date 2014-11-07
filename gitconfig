@@ -5,7 +5,6 @@
 	editor = vim
 	excludesfile = /home/alex/.gitignore
 	autocrlf = input
-	pager = less -F -X
 [merge]
 	tool = vimdiff
 [color]

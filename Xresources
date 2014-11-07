@@ -13,8 +13,9 @@ URxvt.internalBorder: 3
 URxvt*font: xft:DejaVu Sans Mono:size=10
  
 ! Scrollbar
-URxvt.scrollStyle: rxvt
 URxvt.scrollBar: false
+URxvt.secondaryScreen: true
+URxvt.secondaryScroll: false
 URxvt.secondaryWheel: true
  
 ! Cursor
