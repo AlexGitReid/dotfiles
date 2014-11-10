@@ -26,6 +26,9 @@ font pango:DejaVu Sans Mono 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# disable titlebars
+new_window pixel
+
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
@@ -162,3 +165,16 @@ bar {
         position bottom
         status_command i3status
 }
+
+# Window popups
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable
+
+# Autostarts
+exec --no-startup-id xset -b
+exec --no-startup-id xset dpms 600
+exec --no-startup-id hsetroot -solid "#2F4F4F"
+exec --no-startup-id compton -CGb
+
+# Synergy
+exec --no-startup-id ~/scripts/synergywork.sh
