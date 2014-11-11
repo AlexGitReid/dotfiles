@@ -15,9 +15,3 @@ set mouse=a
 set laststatus=2
 
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
-
-" For local replace
-nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
-
-" For global replace
-nnoremap gR gD:%s/<C-R>///gc<left><left><left>

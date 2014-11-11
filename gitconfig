@@ -21,3 +21,5 @@
     default = upstream
 [log]
     decorate = short
+[rerere]
+	enabled = true
