@@ -1,0 +1,8 @@
+#!/bin/bash
+
+test "${PWD%/.git}" != "$PWD" && cd .. 
+unset GIT_DIR GIT_WORK_TREE
+
+git reset --hard
+
+.git/hooks/ctags >/dev/null 2>&1 &

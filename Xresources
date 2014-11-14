@@ -28,7 +28,7 @@ URxvt.pointerBlank: true
  
 ! Colors
 urxvt*foreground: #d3d7cf
-urxvt*background: [95]black
+urxvt*background: [85]#000000
 
 *color0:  #2E3436
 *color1:  #a40000
